@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BookShop.Infra.Data.Entities
+namespace BookShop.Domain.Models
 {
     public class Author
     {
