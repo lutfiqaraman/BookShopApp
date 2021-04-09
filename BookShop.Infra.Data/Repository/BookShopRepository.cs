@@ -1,4 +1,5 @@
 ﻿using BookShop.Domain.Interfaces;
+using BookShop.Domain.Models;
 using BookShop.Infra.Data.Context;
 using Microsoft.EntityFrameworkCore;
 using System;
@@ -30,6 +31,26 @@ namespace BookShop.Infra.Data.Repository
                     Console.WriteLine($"{book.Title} by {book.Author.Name}");
                 }
             }
+        }
+
+        public void ChangeWebURL()
+        {
+            Console.Write("New Quantum Networking WebUrl > ");
+            string newWebUrl = Console.ReadLine();
+
+            using (var db = new BookShopDBContext())
+            {
+                Book singleBook = db.Books
+                    .Include(book => book.Author)
+                    .Single(book => book.Title == "Quantum Networking");
+
+                singleBook.Author.WebUrl = newWebUrl;
+
+                db.SaveChanges();
+                Console.WriteLine("changes had been saved ...");
+            }
+
+            ListAll();
         }
     }
 }

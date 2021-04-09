@@ -9,5 +9,6 @@ namespace BookShop.Domain.Interfaces
     public interface IBookShopRepository
     {
         void ListAll();
+        void ChangeWebURL();
     }
 }
