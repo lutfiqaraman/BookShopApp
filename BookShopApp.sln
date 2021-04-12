@@ -3,15 +3,13 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31129.286
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShopApp", "BookShopApp\BookShopApp.csproj", "{16D9D599-6E87-410F-B0C5-96D6E4AC5C20}"
-EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookShop.Infra.Data", "BookShop.Infra.Data", "{F2BFA6C0-86F8-4984-956A-57741379E85D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShop.Infra.Data", "BookShop.Infra.Data\BookShop.Infra.Data.csproj", "{079A4E4F-0092-4868-8AF0-E7E2779D256F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Infra.Data", "BookShop.Infra.Data\BookShop.Infra.Data.csproj", "{079A4E4F-0092-4868-8AF0-E7E2779D256F}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "BookShop.Domain", "BookShop.Domain", "{367BB3CD-98D9-40D2-A34F-1100D5312940}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BookShop.Domain", "BookShop.Domain\BookShop.Domain.csproj", "{B067EAC7-9D96-4761-AA56-CC21C48645FC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "BookShop.Domain", "BookShop.Domain\BookShop.Domain.csproj", "{B067EAC7-9D96-4761-AA56-CC21C48645FC}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -19,10 +17,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{16D9D599-6E87-410F-B0C5-96D6E4AC5C20}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{16D9D599-6E87-410F-B0C5-96D6E4AC5C20}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{16D9D599-6E87-410F-B0C5-96D6E4AC5C20}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{16D9D599-6E87-410F-B0C5-96D6E4AC5C20}.Release|Any CPU.Build.0 = Release|Any CPU
 		{079A4E4F-0092-4868-8AF0-E7E2779D256F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{079A4E4F-0092-4868-8AF0-E7E2779D256F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{079A4E4F-0092-4868-8AF0-E7E2779D256F}.Release|Any CPU.ActiveCfg = Release|Any CPU
