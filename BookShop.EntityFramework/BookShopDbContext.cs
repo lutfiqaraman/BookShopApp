@@ -13,5 +13,10 @@ namespace BookShop.EntityFramework
         {
 
         }
+
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+
+        }
     }
 }
