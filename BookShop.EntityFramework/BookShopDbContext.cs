@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using BookShop.Domain.Models;
+using Microsoft.EntityFrameworkCore;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -9,6 +10,9 @@ namespace BookShop.EntityFramework
 {
     public class BookShopDbContext : DbContext
     {
+        DbSet<Book> Books { get; set; }
+        DbSet<Author> Authors { get; set; }
+
         public BookShopDbContext(DbContextOptions<BookShopDbContext> options) : base(options)
         {
 
