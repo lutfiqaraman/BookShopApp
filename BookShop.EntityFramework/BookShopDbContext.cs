@@ -12,6 +12,7 @@ namespace BookShop.EntityFramework
     {
         DbSet<Book> Books { get; set; }
         DbSet<Author> Authors { get; set; }
+        public DbSet<Tag> Tags { get; set; }
 
         public BookShopDbContext(DbContextOptions<BookShopDbContext> options) : base(options)
         {
